@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>
+            Single WebPage
+        </title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding:2%;
+            overflow: hidden;
+            background-color: #333;
+            
+        }
+        .warpnav{
+            position: sticky;
+            top:0%;
+        }
+        ul img{
+            float: left;
+            height: 50px;
+            width: 300px;
+        }
+        li {
+            float: right;
+        }
+
+        li a,.p3 a {
+            display: block;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .p3 a{
+            color: rgb(255, 0, 0);
+        }
+        #p4 h1{
+            font-family:  sans-serif;
+            color: #707070;
+            font-size: 25px;
+        }
+        #p4 h2{
+            font-family: Geneva, Verdana, sans-serif;
+        }
+        #p4 p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #p4 img{
+            height: 400;
+        }
+        #p3 p{
+            
+            font-size: 23px;
+            border-radius: 8px;
+            color: rgb(14, 0, 0);
+            
+        }
+        .p3{
+            display: flex;
+            margin-left: 15%;
+        }
+        #p3 h1{
+            font-size: 30px;
+            font-family: Geneva, Verdana, sans-serif;
+        }
+        #p3 img{
+            height: 300px;
+            width: 500px;
+    
+        }
+        .room{
+            padding: 10px;
+        }
+        .p2 img{
+            height: 60%;
+            width: 900px;
+        }
+        .p2 p{
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size: 30px;
+        }
+        .p2 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25;
+        }
+        .box1{
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+            float: right;
+        }
+        .p1 img{
+            width: 900px;
+            height: 500px;
+        }
+        .p1 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+        .p1 h2{
+            font-family: Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-style: italic;
+        }
+        .add{
+            border-style: solid;
+            border-width: 40px 40px;
+        }
+        .add p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+  
+        </style>
+    <body>
+        <div class="warpnav">
+
+            <ul>
+                <img src="data:image/png;base64,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" alt="logo">
+                <li><a href="#p1">Contact</a></li>
+                <li><a href="#p2">Dining</a></li>
+                <li><a href="#p3">Accommodation</a></li>
+                <li><a href="#p4">Home</a></li>
+              </ul>
+        </div>
+        <div section="p4" id="p4">
+            <br>
+            <center>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/328036948.jpg?k=ecf8dc2d982707079f4c4eb339dad3629eca35d6dfc5ec58139192ab80b877a6&o=&hp=1" alt="reception">
+                <img src="https://gos3.ibcdn.com/ad942d4297fd11e4b6e736cfdd80c293.jfif" alt="front">
+                <br><h1>WELCOME TO <i>LE</i> MÉRIDIEN COIMBATORE</h1>
+                <h2>Luxury Business Hotel</h2>
+                <p>Strategically positioned in one of India's most dynamic cities, Le Méridien Coimbatore is close to Coimbatore Airport (CJB), major businesses and a new IT park.</p>
+                <p>It's an ideal space for the sophisticated business professional. Inspiration can be found in our two restaurants serving authentic Indian cuisine. The lobby bar and lounge provides a modern communal venue, and the fitness centre, tennis court, pool and spa will invigorate body and mind.</p>
+                <p> With an emphasis on comfort and technology, our 254 guest rooms and suites evoke individuality and creativity. Featuring engaging décor and flexible work space, the rooms offer an urban escape for the well-travelled.</p>
+            </center><br><br>
+        </div>
+        <div class="p3" id="p3">
+            <div class="room">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-bedroom-8458-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" alt="room1">
+            <center><p>Guest room, 1 King, City view, Atrium Building</p>
+            <a href="https://www.marriott.com/en-us/hotels/cjbmd-le-meridien-coimbatore/rooms/#">View More</a></center>
+            </div>
+            <div class="room">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-executive-suite-4803-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" alt="room2">
+            <p>Concierge level, Guest room, 1 King, City view, Corner room</p>
+            <center><a href="https://www.marriott.com/en-us/hotels/cjbmd-le-meridien-coimbatore/rooms/#">View More</a></center>
+            </div>
+            </div>
+            <div class="p3" id="p3">
+            <div class="room">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-twin-club-guestroom-3038-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" alt="room">
+            <p>Club lounge access, Guest room, 2 Twin/Single Bed(s)</p>
+            <center><a href="https://www.marriott.com/en-us/hotels/cjbmd-le-meridien-coimbatore/rooms/#">View More</a></center>
+            </div>
+            <div class="room">
+            <img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-suite-8463-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" alt="room">
+            <p>Deluxe Suite, Club lounge access, 1 Bedroom Larger Suite</p>
+            <center><a href="https://www.marriott.com/en-us/hotels/cjbmd-le-meridien-coimbatore/rooms/#">View More</a></center>
+            </div>
+        </div><br><br>
+        <div class="p2" id="p2">
+            <center><img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-bar-8484-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" alt="bar">
+                <p>Enjoy Food and Drinks Offered at Le Méridien</p>
+                <h1><i> AT THIS HOTEL</i></h1>
+            </center>
+            <div class="box1">
+                <p>Peacock [Indian]</p>
+                <p1>Peacock is the authetic Indian restaurant. Specialities from the different cuisines from North & South India.</p1><br><br>
+                <p2><strong>🕑 EveryDay :  12:00 PM - 11:00 PM</strong></p2>
+            </div>
+            <div class="box1">
+                <p>Ponzu [Asian]</p>
+                <p1>The Cuisine explores traditional flavours of various nationsfrom the fiery spices of Mangolia to the delicate minimalism of Japanese Cuisine to the induvidualistic seasoning of China and the unique charecter of Thai food.</p1><br><br>
+                <p2><strong>🕑 EveryDay :  1:00 PM - 10:00 PM</strong></p2>
+            </div>
+            <div class="box1">
+                <p>Latest Recipe [Multiple cuisines]</p>
+                <p1>All day dining restaurant serves throughout the day and night on ala carte. Buffets are served during breakfast, lunch, dinner.</p1><br><br>
+                <p2><strong>🕑 Open 24/7</strong></p2>
+            </div>
+        </div>
+        <div class="p1" id="p1">
+            <center><img src="https://cache.marriott.com/content/dam/marriott-renditions/CJBMD/cjbmd-ballroom-8470-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2280px:*" alt="dine"><br><br>
+            <h1>START PLANNING YOUR MEETINGS OR EVENTS HERE</h1>
+            <h2>LE MÉRIDIEN</h2><br>
+            </center>
+            <center>
+            <div class="add">
+                
+                <p><strong></strong>762 AVINASHI ROAD, NEELAMBUR VILLAGE,<br>
+                    
+                    COIMBATORE, TAMIL NADU, INDIA, 641062<br>
+                    
+                FAX: +91 422-2364444</p>
+                
+            </div>
+            </center>
+        </div>
+    </body>
+</html>
